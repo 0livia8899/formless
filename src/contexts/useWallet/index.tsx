@@ -46,7 +46,7 @@ setGlobalConfig({
     },
     socialLogin: {
       Telegram: {
-        botId: '8199240278:AAG2-uV5vuc6qnEn72i41-rkljJW5QdOLhs',
+        botId: '8199240278',
       },
     },
     serviceUrl: NETWORK_CONFIG.webLoginRequestDefaultsUrl,
