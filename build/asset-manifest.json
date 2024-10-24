@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1fcf98e6.css",
-    "main.js": "/static/js/main.26eb9629.js",
+    "main.js": "/static/js/main.44d19356.js",
     "static/media/background.png": "/static/media/background.94556ae46f7b8d7d9813.png",
     "static/media/Roboto-Regular-14.ttf": "/static/media/Roboto-Regular-14.f25bd05915c1a3468d3d.ttf",
     "static/media/D-DIN-Bold.ttf": "/static/media/D-DIN-Bold.86b1324371e7bd49c71b.ttf",
@@ -46,6 +46,6 @@
   },
   "entrypoints": [
     "static/css/main.1fcf98e6.css",
-    "static/js/main.26eb9629.js"
+    "static/js/main.44d19356.js"
   ]
 }

@@ -32,4 +32,4 @@ package-lock.json
 .eslintcache
 
 # env
-.env
+# .env
