@@ -560,7 +560,7 @@ export default function Home() {
     if(window.innerHeight == screen.height){
       setSafeAreaHeight('å…¨å±');
     }else{
-      setSafeAreaHeight('éžå…¨å±?');
+      setSafeAreaHeight('éžå…¨ï¿½?');
     }
   }, [window.innerHeight]);
   const handleClick = () => {
@@ -628,7 +628,8 @@ export default function Home() {
             <div className={`game-wrap ${isIOS ? 'ios_fill_bg' : ''}`} style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1}}>
                 <iframe
                 id="game_iframe"
-                src={`http://ec2-13-212-221-198.ap-southeast-1.compute.amazonaws.com/game?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
+                // src={`http://ec2-13-212-221-198.ap-southeast-1.compute.amazonaws.com/game?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
+                src={`https://formless-cocos.vercel.app/game?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
                 style={{ width: '100%', height: '100%', border: 'none' }}></iframe>
             </div>
           )}
@@ -637,7 +638,8 @@ export default function Home() {
               <iframe
                 id="game_iframe"
                 allow="autoplay" 
-                src={`http://ec2-13-212-221-198.ap-southeast-1.compute.amazonaws.com/game?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
+                // src={`http://ec2-13-212-221-198.ap-southeast-1.compute.amazonaws.com/game?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
+                src={`https://formless-cocos.vercel.app/game?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
                 // src={'http://ec2-13-212-221-198.ap-southeast-1.compute.amazonaws.com/'}
                 style={{ width: '100%', height: '100%', border: 'none' }}></iframe>
                 {/* <iframe
@@ -670,18 +672,18 @@ export default function Home() {
                 {/* <div className="info-content">
                   <div className="tr-content">
                     <div className='item-tr item-tr-l'>
-                      <tr className='cus-tr'><td><span className='cus-tr-title'>Banker Winï¼?</span></td><td className={(bet_dict[0] / 100) > 0 ? '':'text-grey'}>{(bet_dict[0] / 100) || 0} ELF</td></tr>
-                      <tr className='cus-tr'><td><span className='cus-tr-title'>Player Winï¼?</span></td><td className={(bet_dict[1] / 100) > 0 ? '':'text-grey'}>{(bet_dict[1] / 100) || 0} ELF</td></tr>
-                      <tr className='cus-tr'><td><span className='cus-tr-title'>Tie Winï¼?</span></td><td className={(bet_dict[2] / 100) > 0 ? '':'text-grey'}>{(bet_dict[2] / 100) || 0} ELF</td></tr>
+                      <tr className='cus-tr'><td><span className='cus-tr-title'>Banker Winï¿½?</span></td><td className={(bet_dict[0] / 100) > 0 ? '':'text-grey'}>{(bet_dict[0] / 100) || 0} ELF</td></tr>
+                      <tr className='cus-tr'><td><span className='cus-tr-title'>Player Winï¿½?</span></td><td className={(bet_dict[1] / 100) > 0 ? '':'text-grey'}>{(bet_dict[1] / 100) || 0} ELF</td></tr>
+                      <tr className='cus-tr'><td><span className='cus-tr-title'>Tie Winï¿½?</span></td><td className={(bet_dict[2] / 100) > 0 ? '':'text-grey'}>{(bet_dict[2] / 100) || 0} ELF</td></tr>
                     </div>
                     <div className='item-tr item-tr-r'>
-                      <tr className='cus-tr'><td><span className='cus-tr-title'>Banker Pairï¼?</span></td><td className={(bet_dict[3] / 100) > 0 ? '':'text-grey'}>{(bet_dict[3] / 100) || 0} ELF</td></tr>
-                      <tr className='cus-tr'><td><span className='cus-tr-title'>Player Pairï¼?</span></td><td className={(bet_dict[4] / 100) > 0 ? '':'text-grey'}>{(bet_dict[4] / 100) || 0} ELF</td></tr>
-                      <tr className='cus-tr'><td><span className='cus-tr-title'>Totalï¼?</span></td><td className={(money / 100) > 0 ? '':'text-grey'}>{(money / 100) || 0} ELF</td></tr>
+                      <tr className='cus-tr'><td><span className='cus-tr-title'>Banker Pairï¿½?</span></td><td className={(bet_dict[3] / 100) > 0 ? '':'text-grey'}>{(bet_dict[3] / 100) || 0} ELF</td></tr>
+                      <tr className='cus-tr'><td><span className='cus-tr-title'>Player Pairï¿½?</span></td><td className={(bet_dict[4] / 100) > 0 ? '':'text-grey'}>{(bet_dict[4] / 100) || 0} ELF</td></tr>
+                      <tr className='cus-tr'><td><span className='cus-tr-title'>Totalï¿½?</span></td><td className={(money / 100) > 0 ? '':'text-grey'}>{(money / 100) || 0} ELF</td></tr>
                     </div>
                   </div>
                   <div className="desc-content">
-                    <p>Confirm bettingï¼?</p>
+                    <p>Confirm bettingï¿½?</p>
                     <Flex gap="small" vertical>
                       <Progress style={{ width: '170px' }} percent={percent} format={() => description}></Progress>
                     </Flex>
@@ -691,28 +693,28 @@ export default function Home() {
                   <div className="tr-content">
                     <div className='item-tr'>
                       <tr className='cus-tr'>
-                        <td><span className='cus-tr-title cus-tr-title-spec'>BANKERï¼?</span></td>
+                        <td><span className='cus-tr-title cus-tr-title-spec'>BANKERï¿½?</span></td>
                         <td className={`item-tr-l ${(bet_dict[0] / 100) > 0 ? '' : 'text-grey'}`}>{(bet_dict[0] / 100) || 0} ELF</td>
-                        <td className='item-tr-r'><span className='cus-tr-title cus-tr-title-spec'>PLAYERï¼?</span></td>
+                        <td className='item-tr-r'><span className='cus-tr-title cus-tr-title-spec'>PLAYERï¿½?</span></td>
                         <td className={`${(bet_dict[1] / 100) > 0 ? '' : 'text-grey'}`}>{(bet_dict[1] / 100) || 0} ELF</td>
                        
                       </tr>
-                      <tr className='cus-tr cus-tr-md'><td><span className='cus-tr-title'>TIEï¼?</span></td><td className={(bet_dict[2] / 100) > 0 ? '':'text-grey'}>{(bet_dict[2] / 100) || 0} ELF</td></tr>
+                      <tr className='cus-tr cus-tr-md'><td><span className='cus-tr-title'>TIEï¿½?</span></td><td className={(bet_dict[2] / 100) > 0 ? '':'text-grey'}>{(bet_dict[2] / 100) || 0} ELF</td></tr>
                       <tr className='cus-tr'>
-                        <td><span className='cus-tr-title'>BANKER PAIRï¼?</span></td>
+                        <td><span className='cus-tr-title'>BANKER PAIRï¿½?</span></td>
                         <td className={`item-tr-l ${(bet_dict[3] / 100) > 0 ? '' : 'text-grey'}`}>{(bet_dict[3] / 100) || 0} ELF</td>
-                        <td className='item-tr-r'><span className='cus-tr-title'>PLAYER PAIRï¼?</span></td>
+                        <td className='item-tr-r'><span className='cus-tr-title'>PLAYER PAIRï¿½?</span></td>
                         <td className={(bet_dict[4] / 100) > 0 ? '' : 'text-grey'}>{(bet_dict[4] / 100) || 0} ELF</td>
                       </tr>
                     </div>
                   </div>
                   <div className="desc-content">
-                    <p>Confirm bettingï¼?</p>
+                    <p>Confirm bettingï¿½?</p>
                     <div className="progress-bar">
                       <Flex gap="small" vertical>
                         <Progress style={{ width: '140px',margin: 0 }} percent={percent} format={() => description}></Progress>
                       </Flex>
-                      <tr className='cus-tr'><td><span className='cus-tr-title'>TOTALï¼?</span></td><td className={(money / 100) > 0 ? '':'text-grey'}>{(money / 100) || 0} ELF</td></tr>
+                      <tr className='cus-tr'><td><span className='cus-tr-title'>TOTALï¿½?</span></td><td className={(money / 100) > 0 ? '':'text-grey'}>{(money / 100) || 0} ELF</td></tr>
                     </div>
                     
                   </div>
@@ -766,32 +768,32 @@ export default function Home() {
                   <img src={imgClose} alt="" onClick={closeModal} className={`img-close ${isPlayDisabled ? 'display-none' : ''}`} />
                   <div className="grid-container">
                     <div className="item">
-                      <span className='cus-tr-title cus-tr-title-spec'>BANKERï¼?</span>
+                      <span className='cus-tr-title cus-tr-title-spec'>BANKERï¿½?</span>
                       <span className={`item-tr-l ${(bet_dict[0] / 100) > 0 ? '' : 'text-grey'}`}>{(bet_dict[0] / 100) || 0} ELF</span>
                     </div>
                     <div className="item">
-                      <span className='item-tr-r'><span className='cus-tr-title cus-tr-title-spec'>PLAYERï¼?</span></span>
+                      <span className='item-tr-r'><span className='cus-tr-title cus-tr-title-spec'>PLAYERï¿½?</span></span>
                       <span className={`${(bet_dict[1] / 100) > 0 ? '' : 'text-grey'}`}>{(bet_dict[1] / 100) || 0} ELF</span>
                     </div>
                   </div>
-                  <div className='cus-tr cus-tr-md'><span className='cus-tr-title'>TIEï¼?</span><span className={(bet_dict[2] / 100) > 0 ? '':'text-grey'}>{(bet_dict[2] / 100) || 0} ELF</span></div>
+                  <div className='cus-tr cus-tr-md'><span className='cus-tr-title'>TIEï¿½?</span><span className={(bet_dict[2] / 100) > 0 ? '':'text-grey'}>{(bet_dict[2] / 100) || 0} ELF</span></div>
                   <div className="grid-container">
                     <div className="item">
-                      <span className='cus-tr-title'>BANKER PAIRï¼?</span>
+                      <span className='cus-tr-title'>BANKER PAIRï¿½?</span>
                       <span className={`item-tr-l ${(bet_dict[3] / 100) > 0 ? '' : 'text-grey'}`}>{(bet_dict[3] / 100) || 0} ELF</span>
                     </div>
                     <div className="item">
-                      <span className='item-tr-r'><span className='cus-tr-title'>PLAYER PAIRï¼?</span></span>
+                      <span className='item-tr-r'><span className='cus-tr-title'>PLAYER PAIRï¿½?</span></span>
                       <span className={(bet_dict[4] / 100) > 0 ? '' : 'text-grey'}>{(bet_dict[4] / 100) || 0} ELF</span>
                     </div>
                   </div>
                   <div className="desc-content">
-                    <p className='confirm-bet-text'>Confirm bettingï¼?</p>
+                    <p className='confirm-bet-text'>Confirm bettingï¿½?</p>
                     <div className="progress-bar">
                       <Flex gap="small" vertical>
                         <Progress style={{ width: '150px',margin: 0}} percent={percent} format={() => description}></Progress>
                       </Flex>
-                      <div className='cus-tr'><span className='cus-tr-title'>TOTALï¼?</span><span className={(money / 100) > 0 ? '':'text-grey'}>{(money / 100) || 0} ELF</span></div>
+                      <div className='cus-tr'><span className='cus-tr-title'>TOTALï¿½?</span><span className={(money / 100) > 0 ? '':'text-grey'}>{(money / 100) || 0} ELF</span></div>
                     </div>
                   </div>
                   <div className="btns">

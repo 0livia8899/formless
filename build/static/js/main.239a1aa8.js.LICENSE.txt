@@ -4,12 +4,6 @@
       @license MIT
       */
 
-/*
-    object-assign
-    (c) Sindre Sorhus
-    @license MIT
-    */
-
 /* @license
 Papa Parse
 v5.3.2
@@ -52,13 +46,6 @@ License: MIT
 /*!
        * The buffer module from node.js, for the browser.
        *
-       * @author   Feross Aboukhadijeh <http://feross.org>
-       * @license  MIT
-       */
-
-/*!
-       * The buffer module from node.js, for the browser.
-       *
        * @author   Feross Aboukhadijeh <https://feross.org>
        * @license  MIT
        */
@@ -84,6 +71,12 @@ License: MIT
 
 /*!
  * aelf-sdk.js v3.4.15
+ * (c) 2019-2024 AElf
+ * Released under MIT License
+ */
+
+/*!
+ * aelf-sdk.js v3.4.16-alpha.6
  * (c) 2019-2024 AElf
  * Released under MIT License
  */
@@ -119,6 +112,8 @@ and limitations under the License.
 ***************************************************************************** */
 
 /*! ExcelJS 19-10-2023 */
+
+/*! For license information please see aelf-bridge.js.LICENSE.txt */
 
 /*! https://mths.be/utf8js v2.1.2 by @mathias */
 
