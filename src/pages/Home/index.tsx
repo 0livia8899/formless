@@ -629,7 +629,7 @@ export default function Home() {
                 <iframe
                 id="game_iframe"
                 // src={`http://ec2-13-212-221-198.ap-southeast-1.compute.amazonaws.com/game?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
-                src={`https://formless-cocos.vercel.app/game?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
+                src={`https://formless-cocos.vercel.app?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
                 style={{ width: '100%', height: '100%', border: 'none' }}></iframe>
             </div>
           )}
@@ -639,7 +639,7 @@ export default function Home() {
                 id="game_iframe"
                 allow="autoplay" 
                 // src={`http://ec2-13-212-221-198.ap-southeast-1.compute.amazonaws.com/game?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
-                src={`https://formless-cocos.vercel.app/game?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
+                src={`https://formless-cocos.vercel.app?caAddress=${wallet?.walletInfo.address}&balance=${balanceInit}`}
                 // src={'http://ec2-13-212-221-198.ap-southeast-1.compute.amazonaws.com/'}
                 style={{ width: '100%', height: '100%', border: 'none' }}></iframe>
                 {/* <iframe
